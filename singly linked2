@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-//class Node
 class Node{
     public:
         int data;
@@ -24,7 +23,7 @@ class LinkedList{
             Node *temp=head;
             while(temp->next!=nullptr){
                 temp=temp->next;
-            }//temp=1000
+            }
             temp->next=newNode;
         }
         void deleteAtBeg(){
@@ -44,7 +43,7 @@ class LinkedList{
             while(temp!=nullptr){
                 cout<<temp->data<<"->";
                 temp=temp->next;
-            }//temp=1000 
+            }
             cout<<"NULL";
         }
         
@@ -56,7 +55,7 @@ int main(){
     ll.insertAtBeg(7);
     ll.insertAtBeg(8);
     ll.insertAtEnd(9);
-    ll.display();//8->7->6->5->9->NULL
+    ll.display();
     ll.deleteAtBeg();//4000->8
     cout<<endl;ll.display();//7->6->5->9->NULL
     ll.deleteAtEnd();
